@@ -29,10 +29,14 @@
 
     var nextArrival = moment().add(minutesAway, "minutes");
 
+// I am unable to get the minutes away and next arrival fixed :(
+  //also unable to get things t push up
+  //cant figure out why the console log says that firstTrainTime is not defined when it definitely is!!
+
     database.ref().push({
       name : name,
       destination : destination,
-      firstTrainTime : firstTrainTime,
+      // firstTrainTime : firstTrainTime,
       frequency : frequency,
     })
 
